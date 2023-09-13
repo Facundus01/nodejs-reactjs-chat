@@ -19,7 +19,7 @@ try {
         {username: username, secret: username, first_name: username},
         {headers:{"private-key":private_key}}
         );
-
+        console.log(r.data)
     return res.status(r.status).json(r.data)
 } catch (e) {
     return res.status(404).json(e.response.data)
