@@ -25,4 +25,4 @@ try {
     return res.status(404).json(e.response.data)
 }
 });
-app.listen(3001); // run the app in 3001
+app.listen("https://nodejs-reactjs-chat-rssr.vercel.app/"); // run the app in 3001
