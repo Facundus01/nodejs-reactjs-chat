@@ -4,7 +4,7 @@ const AuthPage = (props) => {
     const onSubmit = (e) => {
       e.preventDefault();
       const { value } = e.target[0];
-      axios.post("https://nodejs-reactjs-chat-rssr.vercel.app/authenticate",
+      axios.post("https://nodejs-reactjs-chat-two.vercel.app/authenticate",
       {username: value}
       )
       .then(r => props.onAuth({...r.data, secret: value}))
